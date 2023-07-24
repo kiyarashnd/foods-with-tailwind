@@ -4,7 +4,7 @@ function App() {
       <div>
         <nav>
           <div>
-            <h1 className='font-bold uppercase'>
+            <h1 className='font-bold uppercase p-4'>
               <a href='/'>Food Ninja</a>
             </h1>
           </div>
@@ -28,7 +28,7 @@ function App() {
         </nav>
       </div>
 
-      <main>
+      <main className='px-16 py-6'>
         <div>
           <a href='#'>Log in</a>
           <a href='#'>Sign up</a>
@@ -40,9 +40,9 @@ function App() {
         </header>
 
         <div>
-          <h4 className='font-bold'>Latest Recipes</h4>
+          <h4 className='font-bold mt-12 pb-2'>Latest Recipes</h4>
 
-          <div>
+          <div className='mt-8'>
             <div>
               <img src='img/img1.jpg' alt='stew'></img>
               <div>
@@ -52,9 +52,9 @@ function App() {
             </div>
           </div>
 
-          <h4 className='font-bold'>Most Popular</h4>
+          <h4 className='font-bold mt-12 pb-2'>Most Popular</h4>
 
-          <div></div>
+          <div className='mt-8'>{/* cards go hereS */}</div>
         </div>
 
         <div>
