@@ -29,9 +29,19 @@ function App() {
       </div>
 
       <main className='px-16 py-6'>
-        <div>
-          <a href='#'>Log in</a>
-          <a href='#'>Sign up</a>
+        <div className='flex justify-center'>
+          <a href='#' className='text-primary'>
+            Log in
+          </a>
+          <a href='#' className='text-primary ml-2'>
+            Sign up
+          </a>
+        </div>
+
+        <div className='flex items-end justify-center'>
+          <div className='bg-red-500 h-4 w-6'></div>
+          <div className='bg-blue-500 h-8 w-6'></div>
+          <div className='bg-green-500 h-12 w-6'></div>
         </div>
 
         <header>
@@ -61,7 +71,7 @@ function App() {
           <div className='mt-8'>{/* cards go hereS */}</div>
         </div>
 
-        <div>
+        <div className='flex justify-center'>
           <div className='bg-secondary-100'>Load more</div>
         </div>
       </main>
