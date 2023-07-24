@@ -4,7 +4,7 @@ function App() {
       <div>
         <nav>
           <div>
-            <h1 className='font-bold uppercase p-4'>
+            <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
               <a href='/'>Food Ninja</a>
             </h1>
           </div>
@@ -40,7 +40,9 @@ function App() {
         </header>
 
         <div>
-          <h4 className='font-bold mt-12 pb-2'>Latest Recipes</h4>
+          <h4 className='font-bold mt-12 pb-2 border-b border-gray-400'>
+            Latest Recipes
+          </h4>
 
           <div className='mt-8'>
             <div>
@@ -52,7 +54,9 @@ function App() {
             </div>
           </div>
 
-          <h4 className='font-bold mt-12 pb-2'>Most Popular</h4>
+          <h4 className='font-bold mt-12 pb-2 border-b border-gary-400'>
+            Most Popular
+          </h4>
 
           <div className='mt-8'>{/* cards go hereS */}</div>
         </div>
