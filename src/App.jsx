@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className='text-gray-600'>
+    <div className='text-gray-600 font-serif'>
       <div>
         <nav>
           <div>
@@ -10,12 +10,12 @@ function App() {
           </div>
           <ul>
             <li className='text-gray-700 font-bold'>
-              <a href='#'>
+              <a href='#' className='text-primary'>
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a href='#'>
+              <a href='#' className='text-secondary-200'>
                 <span>About</span>
               </a>
             </li>
@@ -62,7 +62,7 @@ function App() {
         </div>
 
         <div>
-          <div>Load more</div>
+          <div className='bg-secondary-100'>Load more</div>
         </div>
       </main>
     </div>
