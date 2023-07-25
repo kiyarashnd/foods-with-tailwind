@@ -1,25 +1,65 @@
+import { useState, useRef, useEffect } from 'react';
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const UlList = useRef(null);
+  useEffect(() => {
+    if (isOpen) {
+      UlList.current.style.height = `${80}px`;
+    } else {
+      UlList.current.style.height = `${0}px`;
+    }
+  }, [isOpen]);
+
   return (
     <div className='text-gray-600 font-serif'>
       <div className='grid md:grid-cols-3'>
-        <div className='md:col-span-1'>
-          <nav>
-            <div>
+        <div className='md:col-span-1 md:flex md:justify-end'>
+          <nav className='text-right'>
+            <div className='flex justify-between items-center'>
               <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
                 <a
                   href='/'
-                  className='text-green-500 sm:text-red-500 lg:text-blue-500'
+                  className='text-green-500 sm:text-red-500 lg:text-blue-500 hover:text-gray-700'
                 >
                   Food Ninja
                 </a>
               </h1>
+              <button
+                className='px-4 cursor-pointer md:hidden'
+                id='burger'
+                onClick={() => setIsOpen((para) => !para)}
+              >
+                <svg
+                  className='w-10 transform hover:rotate-90 transition linear duration-700'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='1.5'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  aria-hidden='true'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    d='M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5'
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <ul>
-              <li className='text-gray-700 font-bold'>
-                <a href='#'>
+            <ul
+              className='text-sm mt-1 md:block transition linear duration-700'
+              id='menu'
+              ref={UlList}
+            >
+              <li className='py-1 transition ease-out duration-300'>
+                <a
+                  href='#'
+                  className='px-4 flex justify-end border-r-4 border-white'
+                >
                   <span>Home</span>
                   <svg
-                    className='w-5'
+                    className='w-5 ml-2'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='1.5'
@@ -35,11 +75,14 @@ function App() {
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href='#' className='text-secondary-200'>
+              <li className='py-1 transition ease-out duration-300'>
+                <a
+                  href='#'
+                  className='px-4 flex justify-end border-r-4 border-primary'
+                >
                   <span>About</span>
                   <svg
-                    className='w-5'
+                    className='w-5 ml-2'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='1.5'
@@ -55,11 +98,14 @@ function App() {
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href='#'>
+              <li className='py-1 transition ease-out duration-300'>
+                <a
+                  href='#'
+                  className='px-4 flex justify-end border-r-4 border-white'
+                >
                   <span>Contact</span>
                   <svg
-                    className='w-5'
+                    className='w-5 ml-2'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='1.5'
@@ -83,13 +129,13 @@ function App() {
           <div className='flex justify-center md:justify-end'>
             <a
               href='#'
-              className=' btn text-primary border-primary md:border-2'
+              className=' btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'
             >
               Log in
             </a>
             <a
               href='#'
-              className='btn text-primary ml-2 border-primary md:border-2'
+              className='btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500'
             >
               Sign up
             </a>
@@ -112,7 +158,7 @@ function App() {
             </h4>
 
             <div className='mt-8 grid md:grid-cols-3 gap-10'>
-              <div className='card'>
+              <div className='card hover:shadow-xl'>
                 <img
                   src='img/img1.jpg'
                   alt='stew'
@@ -143,7 +189,7 @@ function App() {
                   <span>25 mins</span>
                 </div>
               </div>
-              <div className='card'>
+              <div className='card hover:shadow-xl'>
                 <img
                   src='img/noodles.jpg'
                   alt='noodle'
@@ -174,7 +220,7 @@ function App() {
                   <span>25 mins</span>
                 </div>
               </div>
-              <div className='card'>
+              <div className='card hover:shadow-xl'>
                 <img
                   src='img/curry.jpg'
                   alt='stew'
@@ -215,7 +261,7 @@ function App() {
           </div>
 
           <div className='flex justify-center'>
-            <div className='btn bg-secondary-100 text-secondary-200'>
+            <div className='btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300'>
               Load more
             </div>
           </div>
