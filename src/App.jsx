@@ -16,18 +16,63 @@ function App() {
             </div>
             <ul>
               <li className='text-gray-700 font-bold'>
-                <a href='#' className='text-primary'>
+                <a href='#'>
                   <span>Home</span>
+                  <svg
+                    className='w-5'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+                    ></path>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a href='#' className='text-secondary-200'>
                   <span>About</span>
+                  <svg
+                    className='w-5'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z'
+                    ></path>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a href='#'>
                   <span>Contact</span>
+                  <svg
+                    className='w-5'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'
+                    ></path>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -36,10 +81,16 @@ function App() {
 
         <main className='px-16 py-6 bg-gray-100 md:col-span-2'>
           <div className='flex justify-center md:justify-end'>
-            <a href='#' className='text-primary'>
+            <a
+              href='#'
+              className=' btn text-primary border-primary md:border-2'
+            >
               Log in
             </a>
-            <a href='#' className='text-primary ml-2'>
+            <a
+              href='#'
+              className='btn text-primary ml-2 border-primary md:border-2'
+            >
               Sign up
             </a>
           </div>
@@ -74,6 +125,21 @@ function App() {
                   </span>
                 </div>
                 <div className='badge'>
+                  <svg
+                    className='w-5 inline-block mr-1'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'
+                    ></path>
+                  </svg>
                   <span>25 mins</span>
                 </div>
               </div>
@@ -90,6 +156,21 @@ function App() {
                   </span>
                 </div>
                 <div className='badge'>
+                  <svg
+                    className='w-5 inline-block mr-1'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'
+                    ></path>
+                  </svg>
                   <span>25 mins</span>
                 </div>
               </div>
@@ -106,6 +187,21 @@ function App() {
                   </span>
                 </div>
                 <div className='badge'>
+                  <svg
+                    className='w-5 inline-block mr-1'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    aria-hidden='true'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'
+                    ></path>
+                  </svg>
                   <span>25 mins</span>
                 </div>
               </div>
@@ -119,7 +215,9 @@ function App() {
           </div>
 
           <div className='flex justify-center'>
-            <div className='bg-secondary-100'>Load more</div>
+            <div className='btn bg-secondary-100 text-secondary-200'>
+              Load more
+            </div>
           </div>
         </main>
       </div>
