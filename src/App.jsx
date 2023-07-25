@@ -28,31 +28,31 @@ function App() {
               <button
                 className='px-4 cursor-pointer md:hidden'
                 id='burger'
-                onClick={() => setIsOpen((para) => !para)}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 <svg
                   className='w-10 transform hover:rotate-90 transition linear duration-700'
                   fill='none'
                   stroke='currentColor'
-                  stroke-width='1.5'
+                  strokeWidth='1.5'
                   viewBox='0 0 24 24'
                   xmlns='http://www.w3.org/2000/svg'
                   aria-hidden='true'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     d='M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5'
                   ></path>
                 </svg>
               </button>
             </div>
             <ul
-              className='text-sm mt-1 md:block transition linear duration-700'
+              className='text-sm mt-0 md:block hover:transition linear duration-700 '
               id='menu'
               ref={UlList}
             >
-              <li className='py-1 transition ease-out duration-300'>
+              <li className='py-1'>
                 <a
                   href='#'
                   className='px-4 flex justify-end border-r-4 border-white'
@@ -75,7 +75,7 @@ function App() {
                   </svg>
                 </a>
               </li>
-              <li className='py-1 transition ease-out duration-300'>
+              <li className='py-1'>
                 <a
                   href='#'
                   className='px-4 flex justify-end border-r-4 border-primary'
@@ -98,7 +98,7 @@ function App() {
                   </svg>
                 </a>
               </li>
-              <li className='py-1 transition ease-out duration-300'>
+              <li className='py-1'>
                 <a
                   href='#'
                   className='px-4 flex justify-end border-r-4 border-white'
@@ -141,11 +141,11 @@ function App() {
             </a>
           </div>
 
-          <div className='flex items-end justify-center'>
+          {/* <div className='flex items-end justify-center'>
             <div className='bg-red-500 h-4 w-6'></div>
             <div className='bg-blue-500 h-8 w-6'></div>
             <div className='bg-green-500 h-12 w-6'></div>
-          </div>
+          </div> */}
 
           <header>
             <h2 className='text-gray-700 text-6xl font-semibold'>Recipes</h2>
@@ -157,12 +157,12 @@ function App() {
               Latest Recipes
             </h4>
 
-            <div className='mt-8 grid md:grid-cols-3 gap-10'>
+            <div className='mt-8 grid lg:grid-cols-3 gap-10'>
               <div className='card hover:shadow-xl'>
                 <img
                   src='img/img1.jpg'
                   alt='stew'
-                  className='w-full h-32 sm:h-48 object-cover'
+                  className='w-full h-32 sm:h-48 object-cover transform hover:translate-y-[5px] transition linear duration-500'
                 ></img>
                 <div className='m-4'>
                   <span className='font-bold'>5 Bean Chili Stew</span>
@@ -193,7 +193,7 @@ function App() {
                 <img
                   src='img/noodles.jpg'
                   alt='noodle'
-                  className='w-full h-32 sm:h-48 object-cover'
+                  className='w-full h-32 sm:h-48 object-cover transform hover:translate-y-[5px] transition linear duration-500'
                 ></img>
                 <div className='m-4'>
                   <span className='font-bold'>Veg Noodles</span>
@@ -224,7 +224,7 @@ function App() {
                 <img
                   src='img/curry.jpg'
                   alt='stew'
-                  className='w-full h-32 sm:h-48 object-cover'
+                  className='w-full h-32 sm:h-48 object-cover transform hover:translate-y-[5px] transition linear duration-500'
                 ></img>
                 <div className='m-4'>
                   <span className='font-bold'>Tofu Curry</span>
