@@ -33,7 +33,7 @@ function App() {
         </nav>
       </div>
 
-      <main className='px-16 py-6'>
+      <main className='px-16 py-6 bg-gray-100'>
         <div className='flex justify-center md:justify-end'>
           <a href='#' className='text-primary'>
             Log in
@@ -60,11 +60,17 @@ function App() {
           </h4>
 
           <div className='mt-8'>
-            <div>
-              <img src='img/img1.jpg' alt='stew'></img>
-              <div>
-                <span>5 Bean Chili Stew</span>
-                <span>Recipe by Mario</span>
+            <div className='bg-white rounded overflow-hidden shadow-md'>
+              <img
+                src='img/img1.jfif'
+                alt='stew'
+                className='w-full h-32 sm:h-48 object-cover'
+              ></img>
+              <div className='m-4'>
+                <span className='font-bold'>5 Bean Chili Stew</span>
+                <span className='block text-gray-500 text-sm'>
+                  Recipe by Mario
+                </span>
               </div>
             </div>
           </div>
