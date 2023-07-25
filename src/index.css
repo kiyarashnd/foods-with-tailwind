@@ -2,5 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 h1 {
-  font-size: 10rem;
+  font-size: 2rem;
+}
+
+.card {
+  @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+.badge {
+  @apply bg-secondary-100 text-xs uppercase font-bold rounded-full p-2 absolute top-0;
+}
+img {
+  transition: all 1s;
+}
+
+img:hover {
+  transform: translateY(-5px);
 }
